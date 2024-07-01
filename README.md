@@ -161,7 +161,10 @@ Respresnetación en el navegador de todos los elementos que conforman una págin
 ## Estructura de un Componente
 Al igual que en HTML, los elementos pueden ser **anidados** en JSX para formar estructuras más complejas.
 
-
+## Comando para crear un proyecto React
+```
+npx create-react-app nombre-de-mi-aplicacion
+```
 
 
 
