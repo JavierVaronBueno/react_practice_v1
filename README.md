@@ -166,6 +166,38 @@ Al igual que en HTML, los elementos pueden ser **anidados** en JSX para formar e
 npx create-react-app nombre-de-mi-aplicacion
 ```
 
+## Primeros Pasos para codificar un proyecto desde cero
+### Depurar proyecto demo
+Primero debemos eliminar algunos archivos que se crean por defecto cuando se crea un proyecto React, estos archivos son una Demo. Eliminar a continuación
+- src\setupTests.js
+- src\reportWebVitals.js
+- src\logo.svg
+- src\App.test.js ya que en esta practica no vamos a aprender sobre pruebas
+
+Podemos eliminar todos los archivos de la carpeta **public** y luego perosnalizarla. 
+
+El archivo index nos debe quedar asi 
+> src\index.js
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+
+## Comando para iniciar nuestro servicio en el puerto 3000
+```
+npm start
+```
 
 
 
