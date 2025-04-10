@@ -1,10 +1,11 @@
 import './App.css';
-import gemLogo from './imagenes/GEM Seeders.bmp'
+import { useState } from 'react';
+import { evaluate } from 'mathjs';
+import Logo from './componentes/Logo';
 import Boton from './componentes/Boton';
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
-import { useState } from 'react';
-import { evaluate } from 'mathjs';
+
 
 function App() {
 
@@ -24,13 +25,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='gem-logo-contenedor'>
-        <img
-          src={gemLogo}
-          className='gem-logo'
-          alt='Logo de GEM'
-        />
-      </div>
+      <Logo />
       <div className='contenedor-calculadora'>
         <Pantalla input={input} />
         <div className='fila'>
